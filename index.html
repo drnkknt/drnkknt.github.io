@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prelove With Putri</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Luxore Preloved</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Luxore<br>Preloved</h1>
+    <div class="logo">
+      <div>Prelove</div>
+      <div>With Putri</div>
+    </div>
     <nav>
       <a href="#">HOME</a>
-      <div class="socials">
-        <a href="#">FB</a>
-        <a href="#">IG</a>
-        <a href="#">WA</a>
-      </div>
     </nav>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="fb"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="tw"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="ig"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="yt"></a>
+    </div>
   </header>
 
-  <main class="grid">
-    <div class="item">
-      <img src="assets/LXR001.jpg" alt="LXR001" />
-      <div class="info">
-        <p>LXR001</p>
-        <a class="btn disabled">Shopee - Belum Bisa Diakses</a>
-        <a class="btn" href="https://wa.me/1234567890">WhatsApp</a>
+  <main>
+    <div class="products">
+      <div class="product" data-code="TPS01" data-img="assets/assets1.jpg">
+        <img src="assets/assets1.jpg" alt="Jeans">
+        <div class="overlay">
+          <div class="code">TPS01</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
+      </div>
+      <div class="product" data-code="TPS02" data-img="assets/assets1.jpg">
+        <img src="assets/assets1.jpg" alt="Sweater">
+        <div class="overlay">
+          <div class="code">TPS02</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
+      </div>
+      <div class="product" data-code="TPS03" data-img="assets/assets1.jpg" alt="Sweater Toronto">
+        <img src="assets/assets1.jpg" alt="Sweater">
+        <div class="overlay">
+          <div class="code">TPS03</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
+      </div>
+      <div class="product" data-code="TPS03" data-img="assets/assets1.jpg" alt="Sweater Toronto">
+        <img src="assets/assets1.jpg" alt="Sweater">
+        <div class="overlay">
+          <div class="code">TPS04</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
+      </div>
+      <div class="product" data-code="TPS05" data-img="assets/assets1.jpg">
+        <img src="assets/assets1.jpg" alt="Jacket">
+        <div class="overlay">
+          <div class="code">TPS05</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
+      </div>
+      <div class="product" data-code="TPS06" data-img="assets/assets1.jpg">
+        <img src="assets/assets1.jpg" alt="Blazer">
+        <div class="overlay">
+          <div class="code">TPS06</div>
+          <a href="#" class="wa-btn">Whatsapp</a>
+        </div>
       </div>
     </div>
-
-    <div class="item">
-      <img src="assets/LXR002.jpg" alt="LXR002" />
-      <div class="info">
-        <p>LXR002</p>
-        <a class="btn disabled">Shopee - Belum Bisa Diakses</a>
-        <a class="btn" href="https://wa.me/1234567890">WhatsApp</a>
-      </div>
-    </div>
-    <!-- Repeat for more items -->
   </main>
+
+  <!-- Modal Popup -->
+  <div class="modal" id="productModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <img id="modalImg" src="" alt="Product" />
+      <!-- No title, no Whatsapp button here -->
+    </div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
