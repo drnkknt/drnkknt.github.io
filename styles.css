@@ -183,3 +183,10 @@ main {
   border-radius: 10px;
   margin: 0;
 }
+.love-emoji {
+  font-size: 1.15em;
+  vertical-align: middle;
+  /* margin-left: 1px; */
+  /* Optional: tambahkan efek animasi/warna jika mau */
+}
+
